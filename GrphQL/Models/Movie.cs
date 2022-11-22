@@ -14,9 +14,12 @@ namespace GrphQL.Models;
     public string? Instructor { get; set; }
     public DateTime ReleaseDate { get; set; }
 
+
+    /*
     [ForeignKey("SuperHeroId")]
     public Guid SuperheroId { get; set; }
 
     public Superhero Superhero { get; set; }
+    */
 }
 

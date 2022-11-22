@@ -37,6 +37,17 @@ namespace GrphQL.Controllers;
         await _superheroRepo.AddSuperhero(superhero);
         return Ok();
     }
- 
+
+    [HttpPut]
+    [Route("api/superheroes")]
+    public async Task<IActionResult> UpdateSuperhero([FromBody] Superhero superhero)
+    {
+        var superHero = await _superheroRepo.UpdateSuperhero(superhero);
+
+
+        await _superheroRepo.UpdateSuperhero(superhero);
+        return Ok();
     }
+
+}
 

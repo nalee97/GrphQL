@@ -9,5 +9,6 @@ namespace GrphQL.IRepository;
     Task<Superhero?> GetSuperhero(Guid id);
 
     Task<List<Superhero>> GetSuperheroes();
+    Task<Superhero> UpdateSuperhero(Superhero superhero);
 }
 
