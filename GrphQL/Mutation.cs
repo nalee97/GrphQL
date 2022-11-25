@@ -16,14 +16,16 @@ public class Mutation
             Description = input.Description,
             ReleaseDate = input.ReleaseDate,
             Instructor = input.Instructor
+
         };
-        await context.Movies.AddAsync(movie, token);
-        await context.SaveChangesAsync(token);
+
+        await context.Movies.AddAsync(movie,token);
+        await context.SaveChangesAsync();
         return movie;
     }
 
     [GraphQLName("UpdateMovie")]
-    [UseDbContext(typeof(SuperHeroDbContext))]
+    [UseDbContext(typeof (SuperHeroDbContext))]
     public async Task<Movie> UpdateMovieAsync(Movie input, [ScopedService] SuperHeroDbContext context,
         CancellationToken token)
     {
