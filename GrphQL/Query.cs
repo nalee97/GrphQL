@@ -32,5 +32,33 @@ namespace GrphQL;
     {
         return await _context.Movies.FindAsync(id);
     }
+
+
+    //Fetch the list of SuperPowers objects
+    [HotChocolate.Data.UseFiltering]
+    [UseSorting]
+    [GraphQLName("Superpowers")]
+    public IQueryable<Superpower> GetSuperpowers() =>
+      _context.Superpowers;
+
+    //Fetch the list of superPowers by Superhero Id
+    [HotChocolate.Data.UseFiltering]
+    [UseSorting]
+    [GraphQLName("SuperpowersBySuperheroId")]
+    public IQueryable<Superpower> GetSuperpowersBySuperheroId(Guid superheroId) =>
+      _context.Superpowers.Where(x => x.Id == superheroId);
+
+    [GraphQLName("GetSuperpowerById")]
+    public async Task<Superpower> GetSuperpowerById(Guid id)
+    {
+        return await _context.Superpowers.FindAsync(id);
+    }
+
+    //Fetch the list of Movie objects
+    [HotChocolate.Data.UseFiltering]
+    [UseSorting]
+    [GraphQLName("Movies")]
+    public IQueryable<Movie> GetMovies() =>
+      _context.Movies;
 }
 
