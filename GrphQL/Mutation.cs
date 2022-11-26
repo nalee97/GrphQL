@@ -24,6 +24,25 @@ public class Mutation
         return movie;
     }
 
+    [GraphQLName("AddSuperhero")]
+    [UseDbContext(typeof(SuperHeroDbContext))]
+    public async Task<Superhero> AddSuperHeroAsync(AddSuperHeroInput input,
+        [ScopedService] SuperHeroDbContext context, CancellationToken token)
+    {
+        var superHero = new Superhero
+        {	
+            Id = Guid.NewGuid(),
+            Name = input.Name,
+            Description = input.Description,
+            Height = input.Height
+        };
+
+        await context.Superheroes.AddAsync(superHero,token);
+        await context.SaveChangesAsync(token);
+
+        return superHero;
+    }
+
     [GraphQLName("UpdateMovie")]
     [UseDbContext(typeof (SuperHeroDbContext))]
     public async Task<Movie> UpdateMovieAsync(Movie input, [ScopedService] SuperHeroDbContext context,

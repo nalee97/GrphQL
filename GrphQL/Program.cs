@@ -23,7 +23,7 @@ builder.Services.AddScoped<ISuperheroRepository, SuperheroRepository>();
 builder.Services.AddScoped<ISuperpowerRepository, SuperpowerRepository>();
 builder.Services.AddScoped<IMovieRepository, MovieRepository>();
 builder.Services.AddScoped<Query>();
-//builder.Services.AddScoped<Mutation>();
+builder.Services.AddScoped<Mutation>();
 
 builder.Services.AddGraphQLServer()
     .AddDefaultTransactionScopeHandler()
