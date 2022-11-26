@@ -97,7 +97,7 @@ public class Mutation
 
         if (superhero is not null)
         {
-            superhero.Id = Guid.NewGuid();
+            
             superhero.Name = input.Name;
             superhero.Description = input.Description;
             superhero.Height = input.Height;
@@ -122,7 +122,7 @@ public class Mutation
 
         if (superpower is not null)
         {
-            superpower.Id = Guid.NewGuid();
+            
             superpower.Description = input.Description;
             superpower.SuperPower = input.SuperPower;
         };
