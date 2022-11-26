@@ -34,6 +34,18 @@ namespace GrphQL;
     }
 
 
+    [GraphQLName("GetSuperheroById")]
+    public async Task<Superhero> GetSuperheroById(Guid id)
+    {
+        return await _context.Superheroes.FindAsync(id);
+    }
+
+    [GraphQLName("GetSuperpowerById")]
+    public async Task<Superpower> GetSuperpowerById(Guid id)
+    {
+        return await _context.Superpowers.FindAsync(id);
+    }
+
     //Fetch the list of SuperPowers objects
     [HotChocolate.Data.UseFiltering]
     [UseSorting]
@@ -48,11 +60,7 @@ namespace GrphQL;
     public IQueryable<Superpower> GetSuperpowersBySuperheroId(Guid superheroId) =>
       _context.Superpowers.Where(x => x.Id == superheroId);
 
-    [GraphQLName("GetSuperpowerById")]
-    public async Task<Superpower> GetSuperpowerById(Guid id)
-    {
-        return await _context.Superpowers.FindAsync(id);
-    }
+    
 
     //Fetch the list of Movie objects
     [HotChocolate.Data.UseFiltering]

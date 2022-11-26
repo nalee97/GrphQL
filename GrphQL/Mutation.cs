@@ -52,8 +52,9 @@ public class Mutation
         var superpower = new Superpower
         {
             Id = Guid.NewGuid(),
-            Description = input.Description,
-            SuperPower = input.SuperPower
+            SuperPower = input.SuperPower,
+            Description = input.Description
+            
         };
 
         await context.Superpowers.AddAsync(superpower, token);
