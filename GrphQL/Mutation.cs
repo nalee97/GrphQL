@@ -43,6 +43,25 @@ public class Mutation
         return superHero;
     }
 
+
+    [GraphQLName("AddSuperpower")]
+    [UseDbContext(typeof(SuperHeroDbContext))]
+    public async Task<Superpower> AddSuperpowerAsync(AddSuperpowerInput input,
+        [ScopedService] SuperHeroDbContext context, CancellationToken token)
+    {
+        var superpower = new Superpower
+        {
+            Id = Guid.NewGuid(),
+            Description = input.Description,
+            SuperPower = input.SuperPower
+        };
+
+        await context.Superpowers.AddAsync(superpower, token);
+        await context.SaveChangesAsync(token);
+
+        return superpower;
+    }
+
     [GraphQLName("UpdateMovie")]
     [UseDbContext(typeof (SuperHeroDbContext))]
     public async Task<Movie> UpdateMovieAsync(Movie input, [ScopedService] SuperHeroDbContext context,
@@ -66,5 +85,50 @@ public class Mutation
         await context.SaveChangesAsync(token);
 
         return movie;
+    }
+
+    [GraphQLName("UpdateSuperhero")]
+    [UseDbContext(typeof(SuperHeroDbContext))]
+    public async Task<Superhero> UpdateSuperheroAsync(Superhero input, [ScopedService] SuperHeroDbContext context,
+        CancellationToken token)
+    {
+        var superhero = await context.Superheroes.FindAsync(input.Id);
+
+        if (superhero is not null)
+        {
+            superhero.Id = Guid.NewGuid();
+            superhero.Name = input.Name;
+            superhero.Description = input.Description;
+            superhero.Height = input.Height;
+        }
+        else
+        {
+            return null;
+        }
+
+        context.Superheroes.Update(superhero);
+        await context.SaveChangesAsync(token);
+
+        return superhero;
+    }
+
+    [GraphQLName("UpdateSuperpower")]
+    [UseDbContext(typeof(SuperHeroDbContext))]
+    public async Task<Superpower> UpdateSuperpowerAsync(Superpower input,
+       [ScopedService] SuperHeroDbContext context, CancellationToken token)
+    {
+        var superpower = await context.Superpowers.FindAsync(input.Id);
+
+        if (superpower is not null)
+        {
+            superpower.Id = Guid.NewGuid();
+            superpower.Description = input.Description;
+            superpower.SuperPower = input.SuperPower;
+        };
+
+        context.Superpowers.Update(superpower);
+        await context.SaveChangesAsync(token);
+
+        return superpower;
     }
 }
