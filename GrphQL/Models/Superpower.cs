@@ -8,7 +8,7 @@ namespace GrphQL.Models;
     [Key]
     public Guid Id { get; set; }
     [Required(ErrorMessage = "Please specify a name for the Superpower")]
-    public string SuperPower { get; set; }
+    public string? SuperPower { get; set; }
     public string? Description { get; set; }
 
     /*

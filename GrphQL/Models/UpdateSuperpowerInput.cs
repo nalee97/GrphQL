@@ -6,7 +6,7 @@ namespace GrphQL.Models
     {
         [Key]
         public Guid Id { get; set; }
-        public string SuperPower { get; set; }
+        public string? SuperPower { get; set; }
         public string? Description { get; set; }
     }
 }
