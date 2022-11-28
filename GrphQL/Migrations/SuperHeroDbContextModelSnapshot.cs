@@ -48,7 +48,7 @@ namespace GrphQL.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("837f746c-c167-4ab7-a8fd-2468ea39ed7a"),
+                            Id = new Guid("c704d721-5994-4c19-9a59-649233d46ab6"),
                             Description = "Batman Begins is a 2005 superhero film directed by Christopher Nolan and written by Nolan and David S. Goyer. Based on the DC Comics character Batman, it stars Christian Bale as Bruce Wayne / Batman, with Michael Caine, Liam Neeson, Katie Holmes, Gary Oldman,",
                             Instructor = "Christopher Nolan",
                             ReleaseDate = new DateTime(2005, 6, 25, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -56,7 +56,7 @@ namespace GrphQL.Migrations
                         },
                         new
                         {
-                            Id = new Guid("60d03812-4128-410b-8803-1b3fc0d54d28"),
+                            Id = new Guid("dbccb75c-5f11-4a37-ab6e-bef4ae2f7389"),
                             Description = "The Dark Knight is a 2008 superhero film directed, produced, and co-written by Christopher Nolan. Based on the DC Comics character Batman, the film is the second installment of Nolan's The Dark Knight Trilogy and a sequel to 2005's Batman Begins, starring Christian Bale and supported by Michael Caine, Heath Ledger, Gary Oldman, Aaron Eckhart, Maggie Gyllenhaal, and Morgan Freeman.",
                             Instructor = "Christopher Nolan",
                             ReleaseDate = new DateTime(2008, 7, 18, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -64,7 +64,7 @@ namespace GrphQL.Migrations
                         },
                         new
                         {
-                            Id = new Guid("1a3594c4-ac3b-4d4c-85ae-2c86109fac68"),
+                            Id = new Guid("fe07d4a7-7b53-401e-a668-0fdd9d5ec37c"),
                             Description = "The Dark Knight Rises is a 2012 superhero film directed by Christopher Nolan, who co-wrote the screenplay with his brother Jonathan Nolan, and the story with David S. Goyer.",
                             Instructor = "Christopher Nolan",
                             ReleaseDate = new DateTime(2012, 7, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -72,7 +72,7 @@ namespace GrphQL.Migrations
                         },
                         new
                         {
-                            Id = new Guid("60c6f297-0a35-4358-aa6b-5c4abc6cb482"),
+                            Id = new Guid("530ec32e-af9c-4556-9976-123222ddf3c9"),
                             Description = "Star Wars (retroactively titled Star Wars: Episode IV – A New Hope) is a 1977 American epic space opera film written and directed by George Lucas, produced by Lucasfilm and distributed by 20th Century Fox.",
                             Instructor = "George Lucas",
                             ReleaseDate = new DateTime(1977, 5, 25, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -80,7 +80,7 @@ namespace GrphQL.Migrations
                         },
                         new
                         {
-                            Id = new Guid("56c5eeea-287d-42d0-8404-61137a643711"),
+                            Id = new Guid("87bd6133-7049-483f-9c5c-dfe9fa8d402c"),
                             Description = "The Empire Strikes Back (also known as Star Wars: Episode V – The Empire Strikes Back) is a 1980 American epic space opera film directed by Irvin Kershner and written by Leigh Brackett and Lawrence Kasdan, based on a story by George Lucas.",
                             Instructor = "Irvin Kershner",
                             ReleaseDate = new DateTime(1980, 5, 21, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -88,7 +88,7 @@ namespace GrphQL.Migrations
                         },
                         new
                         {
-                            Id = new Guid("6ee3a676-c88c-4cff-8e89-8a5cf5cd099b"),
+                            Id = new Guid("7085d33c-278e-486c-b9a4-095dc9117c7c"),
                             Description = "Return of the Jedi (also known as Star Wars: Episode VI – Return of the Jedi) is a 1983 American epic space opera film directed by Richard Marquand. The screenplay is by Lawrence Kasdan and George Lucas from a story by Lucas, who was also the executive producer.",
                             Instructor = "Richard Marquand",
                             ReleaseDate = new DateTime(1983, 5, 25, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -96,7 +96,7 @@ namespace GrphQL.Migrations
                         },
                         new
                         {
-                            Id = new Guid("754fa8b7-9e69-4879-a52c-4d464e33b5be"),
+                            Id = new Guid("bf255aab-aae6-4af3-b765-31148f49b531"),
                             Description = "Black Widow is a 2021 American superhero film based on Marvel Comics featuring the character of the same name. Produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures, it is the 24th film in the Marvel Cinematic Universe (MCU).",
                             Instructor = "Cate Shortland",
                             ReleaseDate = new DateTime(2021, 6, 29, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -127,21 +127,21 @@ namespace GrphQL.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("3ea5c3c4-418f-46c2-abf8-270943230217"),
+                            Id = new Guid("dff2eb19-f95a-4f8f-9d25-09645e0f23a8"),
                             Description = "Batman is a superhero who appears in American comic books published by DC Comics. The character was created by artist Bob Kane and writer Bill Finger, and first appeared in Detective Comics #27 (May 1939). Originally",
                             Height = "6'2",
                             Name = "Batman"
                         },
                         new
                         {
-                            Id = new Guid("fb64fff8-d3f9-4f16-a529-6251e91bc22d"),
+                            Id = new Guid("c47611f7-0021-4de8-8802-7e88bf1ec95b"),
                             Description = "Superman is a fictional superhero appearing in American comic books published by DC Comics. The character was created by writer Jerry Siegel and artist Joe Shuster, high school students living in Cleveland, Ohio, in 1933.",
                             Height = "6'3",
                             Name = "Superman"
                         },
                         new
                         {
-                            Id = new Guid("553f3b30-5549-4224-a2ca-6c2811ef2180"),
+                            Id = new Guid("e8f9b5fa-5300-445a-b4ef-4e7d673b6ab6"),
                             Description = "Luke Skywalker is a fictional character and the main protagonist of the original film trilogy of the Star Wars franchise created by George Lucas. He is portrayed by Mark Hamill in the original trilogy and by Hayden Christensen in the prequel trilogy.",
                             Height = "5'11",
                             Name = "Luke Skywalker"
@@ -161,76 +161,53 @@ namespace GrphQL.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid>("SuperheroId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("SuperheroId");
 
                     b.ToTable("Superpowers");
 
                     b.HasData(
                         new
                         {
-                            Id = new Guid("2a5726e2-42d6-4e1f-807f-9d2908fab478"),
+                            Id = new Guid("ff5af3ae-dabc-470a-b235-3fdf7e46798e"),
                             Description = "He's always a step ahead.",
-                            SuperPower = "Intellect.",
-                            SuperheroId = new Guid("3ea5c3c4-418f-46c2-abf8-270943230217")
+                            SuperPower = "Intellect."
                         },
                         new
                         {
-                            Id = new Guid("276fb2b3-1104-4741-afb6-731be91b2aa5"),
+                            Id = new Guid("6c752d3e-6c90-47ef-8238-7bbf1ac4947c"),
                             Description = "Sublime fighting skills.",
-                            SuperPower = "Fighting",
-                            SuperheroId = new Guid("3ea5c3c4-418f-46c2-abf8-270943230217")
+                            SuperPower = "Fighting"
                         },
                         new
                         {
-                            Id = new Guid("28a91e73-1467-4f09-90c2-0cfdf4164c6e"),
+                            Id = new Guid("fd59c53c-b995-4a63-93d8-feaf16950e07"),
                             Description = "He got a lot of money",
-                            SuperPower = "Wealth.",
-                            SuperheroId = new Guid("3ea5c3c4-418f-46c2-abf8-270943230217")
+                            SuperPower = "Wealth."
                         },
                         new
                         {
-                            Id = new Guid("96754b9a-900a-4ece-8b47-05bfa2568540"),
+                            Id = new Guid("79018d12-6237-4833-b872-2654f02da51e"),
                             Description = "Skywalker is able to deflect fire from a blaster back at the opponent firing. This enables Luke to turn someone else's weapon against them.",
-                            SuperPower = "Deflect blaster power.",
-                            SuperheroId = new Guid("fb64fff8-d3f9-4f16-a529-6251e91bc22d")
+                            SuperPower = "Deflect blaster power."
                         },
                         new
                         {
-                            Id = new Guid("beeda4f9-966f-47b5-a126-d70c67f3acce"),
+                            Id = new Guid("845b1b86-da9e-4d16-a7e0-e5e8b5d35d94"),
                             Description = "She's good at spying at people.",
-                            SuperPower = "Espionage",
-                            SuperheroId = new Guid("553f3b30-5549-4224-a2ca-6c2811ef2180")
+                            SuperPower = "Espionage"
                         },
                         new
                         {
-                            Id = new Guid("5619479b-58b3-40f1-b42d-a31e117a5d4c"),
+                            Id = new Guid("7bb91578-29ba-4ef1-b921-8321534d679c"),
                             Description = "She knows how to infiltrate the enemy.",
-                            SuperPower = "Infiltration",
-                            SuperheroId = new Guid("553f3b30-5549-4224-a2ca-6c2811ef2180")
+                            SuperPower = "Infiltration"
                         },
                         new
                         {
-                            Id = new Guid("75ce3a56-9fee-4415-a858-7b390b2104c0"),
+                            Id = new Guid("f520b9d7-a14f-40cb-adcf-734304054017"),
                             Description = "The knowledge of how to undermine others.",
-                            SuperPower = "Subterfuge",
-                            SuperheroId = new Guid("553f3b30-5549-4224-a2ca-6c2811ef2180")
+                            SuperPower = "Subterfuge"
                         });
-                });
-
-            modelBuilder.Entity("GrphQL.Models.Superpower", b =>
-                {
-                    b.HasOne("GrphQL.Models.Superhero", "Superhero")
-                        .WithMany()
-                        .HasForeignKey("SuperheroId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Superhero");
                 });
 #pragma warning restore 612, 618
         }
